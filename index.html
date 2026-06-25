@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ONE'S AUTO（ワンズオート）｜太子町の新車・中古車販売／買取／車検｜南河内</title>
+<meta name="description" content="大阪・南河内 太子町のONE'S AUTO（ワンズオート）。新車・中古車販売／買取・無料査定／車検・整備／板金・コーティング／保険までワンストップ。Googleクチコミ★4.9。LINEで無料査定。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14161A; --panel:#1B1F24; --panel2:#23282E;
+  --paper:#F3F1EB; --paper2:#E9E6DC; --paper-ink:#1A1C1F;
+  --signal:#FFC72C; --signal-deep:#E8A400; --stamp:#D4452B;
+  --steel:#8C949D; --steel-d:#5B636B;
+  --line:rgba(255,255,255,.10); --line-d:rgba(20,22,26,.14);
+  --disp:'Archivo','Zen Kaku Gothic New',sans-serif;
+  --jp:'Zen Kaku Gothic New','Noto Sans JP',sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--jp);background:var(--ink);color:#EDEFF2;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono)}
+.stripe{height:8px;background:repeating-linear-gradient(135deg,var(--signal) 0 22px,#14161A 22px 38px)}
+
+/* ---- demo banner ---- */
+.demobar{background:var(--stamp);color:#fff;font-family:var(--mono);font-size:12.5px;
+  letter-spacing:.02em;text-align:center;padding:8px 16px;line-height:1.4}
+.demobar b{font-weight:700}
+
+/* ---- header ---- */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(20,22,26,.82);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--disp);font-weight:900;
+  font-size:20px;letter-spacing:.02em}
+.brand .mk{width:34px;height:34px;border:2px solid var(--signal);border-radius:7px;
+  display:grid;place-items:center;font-size:15px;color:var(--signal);transform:rotate(-4deg)}
+.brand small{font-family:var(--jp);font-weight:700;font-size:11px;color:var(--steel);
+  letter-spacing:.18em;display:block;margin-top:-3px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-size:14px;font-weight:500;color:#CDD2D8;transition:color .2s}
+.nav a:hover{color:var(--signal)}
+.nav .tel{font-family:var(--mono);font-weight:700;font-size:15px;color:#fff;
+  border:1px solid var(--signal);border-radius:8px;padding:9px 16px;background:rgba(255,199,44,.08)}
+.nav .tel:hover{background:var(--signal);color:#14161A}
+.burger{display:none;background:none;border:1px solid var(--line);color:#fff;
+  width:44px;height:40px;border-radius:8px;font-size:18px;cursor:pointer}
+
+/* ---- hero ---- */
+.hero{position:relative;padding:84px 0 96px;overflow:hidden;
+  background:radial-gradient(120% 90% at 80% -10%,#252b32 0%,#14161A 60%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(transparent 95%,rgba(255,255,255,.03) 95%) 0 0/100% 26px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr .85fr;gap:48px;align-items:center}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.16em;color:var(--signal);
+  display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--signal)}
+.h-title{font-family:var(--disp);font-weight:900;font-size:clamp(46px,8vw,92px);
+  line-height:.9;letter-spacing:-.01em;text-transform:uppercase;overflow-wrap:break-word}
+.h-title .jp{display:block;font-family:var(--jp);font-weight:900;font-size:clamp(20px,3.4vw,34px);
+  letter-spacing:.04em;margin-top:14px;color:#fff;text-transform:none}
+.h-lead{font-size:clamp(17px,2vw,21px);font-weight:500;color:#D6DADF;margin:26px 0 8px;max-width:30ch}
+.h-sub{font-size:14.5px;color:var(--steel);max-width:40ch}
+.h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.btn{font-weight:700;font-size:15px;border-radius:10px;padding:15px 26px;display:inline-flex;
+  align-items:center;gap:10px;cursor:pointer;border:0;transition:transform .15s,box-shadow .2s,background .2s}
+.btn-pri{background:var(--signal);color:#14161A;box-shadow:0 8px 0 var(--signal-deep)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 10px 0 var(--signal-deep)}
+.btn-pri:active{transform:translateY(4px);box-shadow:0 4px 0 var(--signal-deep)}
+.btn-gh{background:transparent;color:#fff;border:1px solid var(--line);font-family:var(--mono)}
+.btn-gh:hover{border-color:var(--signal);color:var(--signal)}
+
+/* score stamp */
+.score{position:relative;justify-self:center}
+.stamp-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;
+  padding:34px 30px;width:300px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.stamp-card .lab{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;
+  color:var(--steel);text-transform:uppercase}
+.stamp-card .big{font-family:var(--disp);font-weight:900;font-size:84px;line-height:1;
+  color:var(--signal);margin:6px 0 2px;display:flex;align-items:baseline;gap:6px}
+.stamp-card .big span{font-size:26px;color:#fff}
+.stars{color:var(--signal);font-size:19px;letter-spacing:3px}
+.stamp-card .src{font-family:var(--mono);font-size:12.5px;color:#CDD2D8;margin-top:10px;
+  display:flex;align-items:center;gap:7px}
+.gdot{width:9px;height:9px;border-radius:50%;background:#4285F4;
+  box-shadow:0 0 0 2px #fff,9px 0 0 -1px #EA4335,-9px 0 0 -1px #34A853}
+.seal{position:absolute;-webkit-text-stroke:0;top:-22px;right:-18px;width:92px;height:92px;
+  border:3px solid var(--stamp);color:var(--stamp);border-radius:50%;
+  display:grid;place-content:center;text-align:center;transform:rotate(-12deg);
+  font-family:var(--jp);font-weight:900;font-size:15px;line-height:1.15;background:rgba(20,22,26,.6)}
+.seal small{font-family:var(--mono);font-weight:500;font-size:9px;letter-spacing:.1em;display:block}
+
+/* ---- section frame ---- */
+.sec{padding:96px 0;position:relative}
+.sec.light{background:var(--paper);color:var(--paper-ink)}
+.sec.panel{background:var(--panel)}
+.s-head{margin-bottom:52px;max-width:760px}
+.s-ey{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;color:var(--signal-deep);
+  text-transform:uppercase;margin-bottom:14px}
+.sec.light .s-ey{color:#B8780B}
+.sec:not(.light) .s-ey{color:var(--signal)}
+.s-title{font-family:var(--disp);font-weight:800;font-size:clamp(28px,4.4vw,44px);
+  line-height:1.08;letter-spacing:-.01em}
+.s-title .jp{font-family:var(--jp);font-weight:900}
+.s-desc{margin-top:16px;font-size:16px;color:var(--steel)}
+.sec.light .s-desc{color:#5A6068}
+
+/* trust cards */
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tcard{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:26px 22px;
+  position:relative;overflow:hidden}
+.tcard .no{font-family:var(--mono);font-size:12px;color:var(--steel);letter-spacing:.1em}
+.tcard .ic{font-size:30px;margin:6px 0 14px;color:var(--signal)}
+.tcard h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.tcard p{font-size:14px;color:#AEB5BC;line-height:1.7}
+.tcard::before{content:"✓";position:absolute;top:18px;right:18px;color:var(--signal);
+  font-weight:900;font-size:15px;opacity:.5}
+
+/* services checklist */
+.svc{border-top:1px solid var(--line-d)}
+.srow{display:grid;grid-template-columns:78px 1fr auto;gap:24px;align-items:center;
+  padding:24px 8px;border-bottom:1px solid var(--line-d);transition:background .2s}
+.srow:hover{background:var(--paper2)}
+.srow .code{font-family:var(--mono);font-size:13px;color:#B8780B;font-weight:500}
+.srow .nm{font-weight:700;font-size:18px}
+.srow .nm small{display:block;font-weight:500;font-size:13.5px;color:#6A7077;margin-top:3px}
+.srow .pr{font-family:var(--mono);font-weight:700;font-size:16px;color:var(--paper-ink);white-space:nowrap}
+.srow .pr small{display:block;font-size:11px;color:#8A9098;text-align:right;font-weight:400}
+
+/* flow (real sequence -> numbers justified) */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.fstep{padding:26px 22px;border-left:1px solid var(--line);position:relative}
+.fstep:first-child{border-left:0}
+.fstep .n{font-family:var(--disp);font-weight:900;font-size:46px;color:var(--signal);
+  line-height:1;opacity:.95}
+.fstep h4{font-size:17px;font-weight:700;margin:12px 0 8px}
+.fstep p{font-size:13.5px;color:#AEB5BC}
+
+/* voices */
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vcard{background:#fff;border:1px solid var(--line-d);border-radius:14px;padding:26px 24px}
+.vcard .st{color:var(--signal-deep);letter-spacing:2px;font-size:15px}
+.vcard p{font-size:14.5px;color:#33383E;margin:12px 0 16px;line-height:1.8}
+.vcard .who{font-family:var(--mono);font-size:12px;color:#7A8088}
+
+/* access + cta */
+.access{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.acc-info{padding:40px 38px}
+.acc-info dl{display:grid;grid-template-columns:96px 1fr;gap:14px 18px;margin-top:22px;font-size:15px}
+.acc-info dt{font-family:var(--mono);font-size:12.5px;color:var(--signal);letter-spacing:.08em;padding-top:2px}
+.acc-info dd{color:#D6DADF}
+.acc-map{background:var(--panel2);min-height:340px;display:grid;place-content:center;text-align:center;
+  color:var(--steel);font-family:var(--mono);font-size:13px;border-left:1px solid var(--line);padding:24px}
+.acc-map a{color:var(--signal);text-decoration:underline;text-underline-offset:3px}
+
+.ctaband{background:var(--signal);color:#14161A}
+.ctaband .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;
+  padding:54px 24px}
+.ctaband h2{font-family:var(--disp);font-weight:900;font-size:clamp(26px,3.6vw,40px);line-height:1.05}
+.ctaband h2 .jp{font-family:var(--jp)}
+.ctaband .tel-lg{font-family:var(--mono);font-weight:700;font-size:clamp(28px,4vw,44px);white-space:nowrap}
+.ctaband .tel-lg small{display:block;font-size:13px;font-weight:500;letter-spacing:.1em}
+.btn-dark{background:#14161A;color:#fff;box-shadow:0 7px 0 #000}
+.btn-dark:hover{transform:translateY(-2px)}
+
+/* form */
+.form{max-width:680px;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:38px}
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:13.5px;font-weight:500;margin-bottom:7px;color:#CDD2D8}
+.fg label .req{color:var(--stamp);font-family:var(--mono);font-size:11px}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--ink);border:1px solid var(--line);
+  border-radius:9px;padding:13px 14px;color:#fff;font-family:var(--jp);font-size:15px}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:2px solid var(--signal);border-color:transparent}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.formnote{font-size:12.5px;color:var(--steel);margin-top:10px;font-family:var(--mono)}
+
+/* footer */
+.ft{background:#0E1013;padding:54px 0 30px;border-top:1px solid var(--line)}
+.ft .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+.ft h5{font-family:var(--disp);font-weight:900;font-size:18px;margin-bottom:8px}
+.ft p,.ft a{font-size:13.5px;color:#9AA1A8;line-height:1.9}
+.ft a:hover{color:var(--signal)}
+.ft .cap{grid-column:1/-1;border-top:1px solid var(--line);margin-top:26px;padding-top:20px;
+  font-family:var(--mono);font-size:11.5px;color:#5B636B;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.ft .cap b{color:var(--signal)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:880px){
+  .nav .lk{display:none}
+  .burger{display:none}
+  .nav{gap:12px}
+  .nav .tel{padding:9px 12px;font-size:13.5px}
+  .h-title .jp{font-size:clamp(15px,4.3vw,30px);letter-spacing:.02em}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .score{justify-self:start}
+  .trust{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .voices{grid-template-columns:1fr}
+  .access{grid-template-columns:1fr}
+  .acc-map{border-left:0;border-top:1px solid var(--line)}
+  .ft .wrap{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .trust,.flow,.fg2,.ft .wrap{grid-template-columns:1fr}
+  .srow{grid-template-columns:1fr auto;gap:6px 16px}
+  .srow .code{grid-column:1/-1}
+  .brand small{display:none}
+  .brand{font-size:17px}
+  .demobar{font-size:11px}
+  .hero{padding:48px 0 64px}
+  .tel-phone,.hdr-line{display:none}  /* モバイルは brand のみ。CTAはヒーロー等のLINEボタンへ */
+  .s-title{font-size:23px;line-height:1.3}
+  .acc-info h3{font-size:18px}
+  .acc-info{padding:28px 22px}
+  .acc-info dl{grid-template-columns:64px 1fr;font-size:14px}
+  .ctaband h2{font-size:23px}
+  .ctaband .wrap{padding:40px 24px}
+  .ctaband > .wrap > div[style]{text-align:left!important;width:100%}
+  .ctaband .btn-dark{display:inline-flex}
+  .ctaband .tel-lg{font-size:28px;display:block;margin-top:14px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demobar mono">◢ <b>DEMO / コンセプト提案</b> ─ ワンズオート様向けに作成したウェブサイト案です（内容・料金は仮置き）</div>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mk">O</span>
+      <span>ONE'S AUTO<small>ワンズオート ｜ 太子町</small></span>
+    </a>
+    <nav class="nav">
+      <a class="lk" href="#trust">選ばれる理由</a>
+      <a class="lk" href="#svc">サービス</a>
+      <a class="lk" href="#access">アクセス</a>
+      <a class="lk" href="https://www.instagram.com/ones_auto" target="_blank" rel="noopener">Instagram</a>
+      <a class="tel mono hdr-line" href="https://lin.ee/lKYF0mp" target="_blank" rel="noopener" style="border-color:#06C755;color:#06C755;background:rgba(6,199,85,.08)">LINEで査定</a>
+      <a class="tel mono tel-phone" href="tel:0721981001">☎ 0721-98-1001</a>
+    </nav>
+    <button class="burger" aria-label="メニュー" onclick="document.querySelectorAll('.nav .lk').forEach(e=>e.style.display=e.style.display==='block'?'':'block')">☰</button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">南河内・太子町 ／ 新車・中古車販売・買取・車検・整備</p>
+      <h1 class="h-title">ONE'S<br>AUTO<span class="jp">クルマの購入も、車検も。ぜんぶ任せられるお店。</span></h1>
+      <p class="h-lead">新車・中古車の購入から、買取・査定・車検・板金まで。<br>クルマのこと、ぜんぶここで。</p>
+      <p class="h-sub">女性スタッフが、はじめての一台も親身にご相談。無料査定・LINE相談OK。太子町・河南町・富田林エリア対応。</p>
+      <div class="h-cta">
+        <a class="btn btn-pri" href="https://lin.ee/lKYF0mp" target="_blank" rel="noopener" style="background:#06C755;box-shadow:0 8px 0 #04A648;color:#fff">LINEで無料査定・相談 →</a>
+        <a class="btn btn-gh" href="tel:0721981001">☎ 0721-98-1001</a>
+        <a class="btn btn-gh" href="https://www.carsensor.net/shop/osaka/325727001/" target="_blank" rel="noopener">在庫を見る（カーセンサー）</a>
+      </div>
+    </div>
+    <div class="score rv">
+      <div class="seal">高評価<br>整備<small>GOOGLE ★4.9</small></div>
+      <div class="stamp-card">
+        <p class="lab">Google クチコミ評価</p>
+        <p class="big">4.9<span>/5.0</span></p>
+        <p class="stars">★★★★★</p>
+        <p class="src"><span class="gdot"></span> Googleの口コミ 89件にもとづく</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="stripe"></div>
+
+<!-- TRUST -->
+<section class="sec panel" id="trust">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="s-ey">Why ONE'S AUTO</p>
+      <h2 class="s-title"><span class="jp">地域で選ばれ続ける、<br>4つの理由</span></h2>
+      <p class="s-desc">広告ではなく、近所の口コミで広がってきたお店です。その信頼の中身を整理しました。</p>
+    </div>
+    <div class="trust">
+      <div class="tcard rv"><p class="no">01</p><div class="ic">★</div><h3>クチコミ★4.9</h3><p>89件の評価で平均★4.9。「説明が丁寧」「無理に勧めない」と地域のドライバーから支持。</p></div>
+      <div class="tcard rv"><p class="no">02</p><div class="ic">🚘</div><h3>購入〜整備をワンストップ</h3><p>新車・中古車の販売・買取から、車検・整備・板金・保険まで一括。あちこち回る手間がいりません。</p></div>
+      <div class="tcard rv"><p class="no">03</p><div class="ic">◷</div><h3>査定・見積もりは無料</h3><p>買取査定も作業費用も先にご説明。LINEで写真を送るだけの無料査定にも対応します。</p></div>
+      <div class="tcard rv"><p class="no">04</p><div class="ic">💁‍♀️</div><h3>女性スタッフが親身に</h3><p>クルマ選びがはじめての方も相談しやすい雰囲気。InstagramやLINEでも気軽にどうぞ。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec light" id="svc">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="s-ey">Service / サービス</p>
+      <h2 class="s-title"><span class="jp">クルマの購入から、その後まで。</span></h2>
+      <p class="s-desc">新車・中古車の販売から買取・車検・整備まで、クルマのことはひと通り。料金は目安です。</p>
+    </div>
+    <div class="svc rv">
+      <div class="srow"><span class="code">SV-01</span><span class="nm">新車・中古車販売<small>在庫は<a href="https://www.carsensor.net/shop/osaka/325727001/" target="_blank" rel="noopener" style="color:#B8780B;text-decoration:underline">カーセンサー</a>／<a href="https://www.goo-net.com/usedcar_shop/0701443/detail.html" target="_blank" rel="noopener" style="color:#B8780B;text-decoration:underline">グーネット</a>で公開中。お探しのお車もご相談を</small></span><span class="pr">在庫を見る<small>外部リンク</small></span></div>
+      <div class="srow"><span class="code">SV-02</span><span class="nm">買取・無料査定／下取り<small>乗り換えもLINEで写真査定OK</small></span><span class="pr">無料<small>LINE査定</small></span></div>
+      <div class="srow"><span class="code">SV-03</span><span class="nm">車検（指定・認証）<small>24ヶ月点検・代行・測定込み</small></span><span class="pr">¥ 39,800〜<small>＋法定費用</small></span></div>
+      <div class="srow"><span class="code">SV-04</span><span class="nm">一般整備・修理／オイル・タイヤ<small>異音・警告灯・消耗品交換まで</small></span><span class="pr">要見積<small>無料診断</small></span></div>
+      <div class="srow"><span class="code">SV-05</span><span class="nm">板金・塗装<small>キズ・へこみ・事故修理／保険対応</small></span><span class="pr">要見積<small>写真でも可</small></span></div>
+      <div class="srow"><span class="code">SV-06</span><span class="nm">コーティング／各種保険<small>新車・中古車の美しさを長持ち／保険のご相談</small></span><span class="pr">ご相談</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="sec" id="flow">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="s-ey">Flow / ご利用の流れ</p>
+      <h2 class="s-title"><span class="jp">予約から納車まで、4ステップ。</span></h2>
+    </div>
+    <div class="flow rv">
+      <div class="fstep"><div class="n">1</div><h4>相談・予約</h4><p>電話かフォームでご連絡。症状や希望をお聞きします。</p></div>
+      <div class="fstep"><div class="n">2</div><h4>点検・見積もり</h4><p>現車を点検し、作業内容と費用を明確にご提示（無料）。</p></div>
+      <div class="fstep"><div class="n">3</div><h4>整備・作業</h4><p>ご納得後に着手。記録を残しながら確実に仕上げます。</p></div>
+      <div class="fstep"><div class="n">4</div><h4>納車・アフター</h4><p>作業内容をご説明してお渡し。次回の目安もお伝えします。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICES -->
+<section class="sec light">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="s-ey">Reviews / お客様の声</p>
+      <h2 class="s-title"><span class="jp">★4.9 を支える、ご近所の声。</span></h2>
+      <p class="s-desc">Googleクチコミに寄せられた評価の傾向をもとにした代表的なお声です。</p>
+    </div>
+    <div class="voices">
+      <div class="vcard rv"><p class="st">★★★★★</p><p>「料金を先にきちんと説明してくれて安心。必要ない作業は無理に勧められませんでした。」</p><p class="who">太子町 ／ 50代・ファミリーカー</p></div>
+      <div class="vcard rv"><p class="st">★★★★★</p><p>「警告灯の原因をその場で診てくれて、対応が早い。地元にこういう工場があって助かります。」</p><p class="who">富田林市 ／ 30代・通勤車</p></div>
+      <div class="vcard rv"><p class="st">★★★★★</p><p>「車検をお願いしました。仕上がりも説明も丁寧で、次もここに頼もうと思える整備でした。」</p><p class="who">河南町 ／ 60代・軽自動車</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section class="sec panel" id="access">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="s-ey">Access / 工場案内</p>
+      <h2 class="s-title"><span class="jp">太子町から、南河内エリアへ。</span></h2>
+    </div>
+    <div class="access rv">
+      <div class="acc-info">
+        <h3 style="font-family:var(--disp);font-weight:900;font-size:24px">ONE'S AUTO（ワンズオート）</h3>
+        <dl>
+          <dt>住所</dt><dd>〒583-0995<br>大阪府南河内郡太子町太子427-1</dd>
+          <dt>電話</dt><dd><a href="tel:0721981001" class="mono" style="color:var(--signal)">0721-98-1001</a></dd>
+          <dt>営業</dt><dd>平日 9:00–18:30 ／ 土 9:00–17:00<br><span style="color:var(--steel);font-size:13px">日・祝休（要相談）※デモ表記</span></dd>
+          <dt>SNS</dt><dd><a href="https://www.instagram.com/ones_auto" target="_blank" rel="noopener" style="color:var(--signal)">Instagram @ones_auto</a> ／ <a href="https://lin.ee/lKYF0mp" target="_blank" rel="noopener" style="color:var(--signal)">公式LINE</a></dd>
+          <dt>在庫</dt><dd><a href="https://www.carsensor.net/shop/osaka/325727001/" target="_blank" rel="noopener" style="color:var(--signal)">カーセンサー</a> ／ <a href="https://www.goo-net.com/usedcar_shop/0701443/detail.html" target="_blank" rel="noopener" style="color:var(--signal)">グーネット</a></dd>
+          <dt>対応</dt><dd>太子町・河南町・富田林市・羽曳野市 ほか</dd>
+        </dl>
+      </div>
+      <div class="acc-map">
+        <div>
+          🗺<br><br>Googleマップで見る<br>
+          <a href="https://maps.google.com/?cid=4724419778279394187" target="_blank" rel="noopener">ワンズオート（太子町太子427-1）→</a>
+          <br><br><span style="color:var(--steel-d)">※本番では地図を埋め込み表示</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="ctaband">
+  <div class="wrap">
+    <h2><span class="jp">まずは、LINEで気軽に。</span></h2>
+    <div style="text-align:right">
+      <a class="btn btn-dark" href="https://lin.ee/lKYF0mp" target="_blank" rel="noopener" style="margin-bottom:12px">LINEで無料査定・相談 →</a>
+      <a class="tel-lg" href="tel:0721981001">0721-98-1001<small>受付 平日9:00–18:30 ／ 査定・見積もり無料</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="sec" id="estimate">
+  <div class="wrap">
+    <div class="s-head rv">
+      <p class="s-ey">Estimate / 無料見積もり・お問い合わせ</p>
+      <h2 class="s-title"><span class="jp">30秒で、相談の第一歩。</span></h2>
+      <p class="s-desc">車種や気になる症状をお書きください。折り返しご連絡します。</p>
+    </div>
+    <form class="form rv" onsubmit="return false">
+      <div class="fg2">
+        <div class="fg"><label>お名前 <span class="req">必須</span></label><input type="text" placeholder="山田 太郎"></div>
+        <div class="fg"><label>電話番号 <span class="req">必須</span></label><input type="tel" placeholder="090-0000-0000"></div>
+      </div>
+      <div class="fg2">
+        <div class="fg"><label>ご相談内容</label>
+          <select><option>新車・中古車の購入／在庫について</option><option>買取・無料査定／下取り</option><option>車検</option><option>一般整備・修理</option><option>板金・塗装</option><option>コーティング・保険</option><option>その他</option></select>
+        </div>
+        <div class="fg"><label>車種・年式（任意）</label><input type="text" placeholder="例：ダイハツ タント 2018年"></div>
+      </div>
+      <div class="fg"><label>症状・ご希望（任意）</label><textarea rows="4" placeholder="例：走行中にカラカラ音がする／来月車検 など"></textarea></div>
+      <button type="button" class="btn btn-pri" onclick="this.textContent='✓ 送信されました（デモ）';this.disabled=true">この内容で依頼する →</button>
+      <p class="formnote">※これはデモ用フォームです。本番ではメール／LINE通知に接続します。</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div>
+      <h5>ONE'S AUTO</h5>
+      <p>大阪・南河内 太子町の車買取・販売店。新車・中古車の販売／買取・無料査定／車検・整備／板金・コーティング／保険まで、クルマのこと、ぜんぶここで。</p>
+    </div>
+    <div>
+      <h5 style="font-size:14px">SNS・在庫</h5>
+      <p><a href="https://www.instagram.com/ones_auto" target="_blank" rel="noopener">Instagram @ones_auto</a><br><a href="https://lin.ee/lKYF0mp" target="_blank" rel="noopener">公式LINE</a><br><a href="https://www.carsensor.net/shop/osaka/325727001/" target="_blank" rel="noopener">カーセンサー在庫</a><br><a href="https://www.goo-net.com/usedcar_shop/0701443/detail.html" target="_blank" rel="noopener">グーネット在庫</a></p>
+    </div>
+    <div>
+      <h5 style="font-size:14px">お問い合わせ</h5>
+      <p><a href="tel:0721981001" class="mono">☎ 0721-98-1001</a><br>〒583-0995<br>大阪府南河内郡太子町太子427-1</p>
+    </div>
+    <div class="cap">
+      <span>© ONE'S AUTO. ／ Googleクチコミ ★4.9（89件）</span>
+      <span><b>※ 本ページは制作会社が作成したコンセプト提案デモ</b>です。掲載の料金・営業時間・お客様の声は仮置きで、実際の内容と異なる場合があります。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// scroll reveal (reduced-motion respected via CSS)
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
